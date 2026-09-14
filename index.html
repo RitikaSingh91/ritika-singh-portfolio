@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ritika Singh — CSE Student & Software Developer</title>
+<meta name="description" content="Portfolio of Ritika Singh, a Computer Science & Engineering student, software developer and DSA learner building real-world projects and documenting her journey in tech and content creation." />
+<meta name="keywords" content="Ritika Singh, portfolio, software developer, CSE student, DSA, MERN stack, React developer" />
+<meta name="author" content="Ritika Singh" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ritika Singh — CSE Student & Software Developer" />
+<meta property="og:description" content="Computer Science & Engineering student learning DSA, building full-stack projects, and growing a creative journey beyond code." />
+<meta property="og:image" content="assets/og-preview.svg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ritika Singh — CSE Student & Software Developer" />
+<meta name="twitter:description" content="Computer Science & Engineering student learning DSA, building full-stack projects, and growing a creative journey beyond code." />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader-mark">RS</div>
+  <div class="loader-bar"><span id="loaderFill"></span></div>
+</div>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <span class="brand-mark">RS</span>
+      <span class="brand-name">Ritika Singh</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#journey" class="nav-link">Journey</a></li>
+      <li><a href="#career" class="nav-link">Career</a></li>
+      <li><a href="#creator" class="nav-link">Creator</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="assets/Ritika_Singh_Resume.pdf" target="_blank" class="btn btn-ghost btn-sm">Resume</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#skills" class="mobile-link">Skills</a></li>
+    <li><a href="#projects" class="mobile-link">Projects</a></li>
+    <li><a href="#education" class="mobile-link">Education</a></li>
+    <li><a href="#experience" class="mobile-link">Experience</a></li>
+    <li><a href="#journey" class="mobile-link">Journey</a></li>
+    <li><a href="#career" class="mobile-link">Career</a></li>
+    <li><a href="#creator" class="mobile-link">Creator</a></li>
+    <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+    <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+  <a href="assets/Ritika_Singh_Resume.pdf" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:24px;">Download Resume</a>
+</div>
+
+<!-- HERO -->
+<header id="home" class="hero">
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Hey, I'm</p>
+      <h1 class="hero-name">Ritika Singh</h1>
+      <p class="hero-role">
+        <span class="typing" id="typingRole">CSE Student</span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        I'm a Software Developer &amp; CSE student passionate about building innovative and practical applications. I've participated in <span id="heroHackathonStat">5+</span> hackathons and solved <span id="heroDsaStat">176+</span> LeetCode DSA problems, while exploring full-stack development, AI, and cybersecurity. I love turning ideas into projects, solving challenging problems, and continuously learning new technologies.
+      </p>
+      <p class="hero-tagline">Build. Solve. Learn. Repeat.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/Ritika_Singh_Resume.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/RitikaSingh91" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.25 9.27 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.62 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.65 5.33-5.18 5.61.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ritikasingh9125/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ritikasingh_er/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.8.31-1.47.72-2.14 1.39C1.32 2.7.91 3.37.6 4.16c-.3.76-.5 1.64-.56 2.91C0 8.34 0 8.75 0 12s.01 3.66.07 4.94c.06 1.27.26 2.15.56 2.91.31.8.72 1.47 1.39 2.14.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.94.07s3.66-.01 4.94-.07c1.27-.06 2.15-.26 2.91-.56.8-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.14.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.94s-.01-3.66-.07-4.94c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13-.67-.67-1.34-1.08-2.13-1.39-.76-.3-1.64-.5-2.91-.56C15.66.01 15.25 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@ritikasinghvlogs-30" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.5v-7l6.27 3.5-6.27 3.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+<div class="hero-visual reveal">
+  <div class="profile-card">
+    <div class="profile-image-wrapper">
+      <img
+        src="assets/ritika-profile.jpg"
+        alt="Ritika Singh"
+        class="profile-image"
+      />
+    </div>
+    <div class="profile-info">
+      <span class="profile-status">
+        <span class="status-dot"></span>
+      </span>
+      <p>CSE Student · Software Developer</p>
+
+      <div class="profile-tags">
+        <span>DSA</span>
+        <span>Full Stack developer</span>
+        <span>AI(Learning)</span>
+        <span>Cybersecurity(Basic Knowledege)</span>
+      </div>
+    </div>
+  </div>
+</div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">01 — About</p>
+    <h2 class="section-title reveal">A little about me</h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a Computer Science & Engineering student, and honestly, I fell into
+          programming almost by accident — I liked the idea of building things that
+          actually work, and computer science felt like the subject where "figuring
+          it out" is basically the whole job. That's what kept me here.
+        </p>
+        <p>
+          These days a lot of my time goes into Data Structures & Algorithms — not
+          because it's glamorous, but because it's taught me to think before I type.
+          Alongside that, I'm learning to build full applications with the MERN
+          stack, which means going from "I understand this concept" to "I shipped
+          something that works end to end."
+        </p>
+        <p>
+          I care about building real things over collecting certificates, so most of
+          my learning shows up as projects rather than just notes. Long term, I want
+          to work as a software developer on products that solve problems people
+          actually have — and I try to stay honest about what I know versus what
+          I'm still learning, instead of pretending otherwise.
+        </p>
+        <p>
+          Outside of code, I'm usually creating something — a reel, a recipe, a bit
+          of DIY, or documenting whatever I'm learning that week. It keeps me
+          balanced, and it's taught me a lot about communication, which turns out to
+          matter just as much as code.
+        </p>
+      </div>
+
+      <div class="about-highlights reveal">
+        <div class="highlight-card">
+          <span class="highlight-icon">🎓</span>
+          <p>CSE Student</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">💻</span>
+          <p>Software Development</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🧠</span>
+          <p>DSA & Problem Solving</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🛠️</span>
+          <p>Project Building</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🎬</span>
+          <p>Content Creation</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">📈</span>
+          <p>Continuous Learning</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">02 — Skills</p>
+    <h2 class="section-title reveal">What I work with</h2>
+    <p class="section-sub reveal">Labels reflect where I honestly am with each — not everything is mastered, and that's fine.</p>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <p class="section-sub reveal">A mix of full-stack builds and smaller experiments while learning.</p>
+
+    <div class="filter-bar reveal" id="projectFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="mern">MERN</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="other">Other</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">04 — Education</p>
+    <h2 class="section-title reveal">Academic timeline</h2>
+
+    <div class="timeline" id="educationTimeline"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">05 — Experience</p>
+    <h2 class="section-title reveal">Internship experience</h2>
+
+    <div class="timeline" id="experienceTimeline"></div>
+  </div>
+</section>
+
+<!-- DSA / LEARNING JOURNEY -->
+<section id="journey" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">06 — Learning Journey</p>
+    <h2 class="section-title reveal">DSA & preparation</h2>
+    <p class="section-sub reveal">
+      This section is meant to hold real numbers — problems solved, streaks,
+      topics done. Placeholders below, ready to be replaced with actuals.
+    </p>
+
+    <div class="dsa-grid" id="dsaGrid"></div>
+  </div>
+</section>
+
+<!-- CAREER HIGHLIGHTS -->
+<section id="career" class="section career-section">
+  <div class="section-inner">
+
+    <p class="section-eyebrow reveal">
+      07 — Career Highlights
+    </p>
+
+    <h2 class="section-title reveal">
+      Career Highlights
+    </h2>
+
+    <p class="section-sub reveal">
+      A collection of opportunities, selections, internships, and professional milestones.
+    </p>
+
+    <div class="career-grid" id="careerGrid"></div>
+
+  </div>
+</section>
+
+<!-- CREATOR JOURNEY -->
+<section id="creator" class="section creator-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">08 — Beyond Code</p>
+    <h2 class="section-title reveal">My content creation journey</h2>
+    <p class="section-sub reveal">
+      Alongside development, I document parts of my learning and life on
+      Instagram and YouTube — it's become a real part of how I communicate.
+    </p>
+
+    <div class="creator-grid">
+      <div class="creator-card reveal">
+        <div class="creator-card-top">
+          <span class="creator-icon ig">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.8.31-1.47.72-2.14 1.39C1.32 2.7.91 3.37.6 4.16c-.3.76-.5 1.64-.56 2.91C0 8.34 0 8.75 0 12s.01 3.66.07 4.94c.06 1.27.26 2.15.56 2.91.31.8.72 1.47 1.39 2.14.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.94.07s3.66-.01 4.94-.07c1.27-.06 2.15-.26 2.91-.56.8-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.14.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.94s-.01-3.66-.07-4.94c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13-.67-.67-1.34-1.08-2.13-1.39-.76-.3-1.64-.5-2.91-.56C15.66.01 15.25 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+          </span>
+          <div>
+            <h3>Instagram</h3>
+            <a href="https://instagram.com/ritikasingh_9125" target="_blank" rel="noopener">@ritikasingh_9125</a>
+          </div>
+        </div>
+        <p>
+          Where I share snippets of college life, DIY, and whatever I'm making or
+          learning that week — a more visual, in-the-moment version of my journey.
+        </p>
+        <div class="creator-preview">
+        </div>
+        <a href="https://instagram.com/ritikasingh_9125" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Profile</a>
+      </div>
+
+      <div class="creator-card reveal">
+        <div class="creator-card-top">
+          <span class="creator-icon yt">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.5v-7l6.27 3.5-6.27 3.5Z"/></svg>
+          </span>
+          <div>
+            <h3>YouTube</h3>
+            <a href="https://youtube.com/@ritikasingh_9125" target="_blank" rel="noopener">ritikasingh_9125</a>
+          </div>
+        </div>
+        <p>
+          Longer-form videos — think vlogs, process videos, and the occasional
+          "what I'm learning this month" kind of update.
+        </p>
+        <div class="creator-preview">
+        </div>
+        <a href="https://www.youtube.com/@ritikasinghvlogs-30" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Channel</a>
+      </div>
+
+      <div class="creator-card reveal">
+        <div class="creator-card-top">
+          <span class="creator-icon yt">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.5v-7l6.27 3.5-6.27 3.5Z"/></svg>
+          </span>
+          <div>
+            <h3>English with Ritika</h3>
+            <a href="https://www.youtube.com/@EnglishwithRitika03" target="_blank" rel="noopener">@EnglishwithRitika03</a>
+          </div>
+        </div>
+        <p>
+          I share the tips and strategies I use to improve my English communication skills — practicing speaking, learning new vocabulary, and working on grammar. I'm not perfect and still learning, but the more we speak, the more confident we become.
+        </p>
+        <div class="creator-preview">
+        </div>
+        <a href="https://www.youtube.com/@EnglishwithRitika03" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Channel</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">09 — Gallery</p>
+    <h2 class="section-title reveal">A visual look at my journey</h2>
+
+    <div class="filter-bar reveal" id="galleryFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="college">College Life</button>
+      <button class="filter-btn" data-filter="coding">Coding</button>
+      <button class="filter-btn" data-filter="projects">Projects</button>
+      <button class="filter-btn" data-filter="creative">Creative</button>
+      <button class="filter-btn" data-filter="creator">Creator</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES & ACHIEVEMENTS -->
+<section id="achievements" class="section certificates-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">10 — Achievements</p>
+    <h2 class="section-title reveal">Certificates & achievements</h2>
+    <p class="section-sub reveal">
+      A collection of certifications, workshops, simulations, hackathons, and
+      technology events that reflect my continuous learning.
+    </p>
+
+    <div class="achievements-grid" id="achievementsGrid"></div>
+  </div>
+</section>
+
+<!-- RESUME CTA -->
+<section class="resume-cta">
+  <div class="section-inner resume-cta-inner reveal">
+    <h2>Want to know more about my journey?</h2>
+    <p>The resume has the condensed version — everything else is on this page.</p>
+    <div class="hero-cta" style="justify-content:center;">
+      <a href="assets/Ritika_Singh_Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+      <a href="assets/Ritika_Singh_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">11 — Contact</p>
+    <h2 class="section-title reveal">Let's talk</h2>
+    <p class="section-sub reveal">Open to internships, collaborations, and just talking tech.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:ritikasingh9125@gmail.com" class="contact-line">
+          <span class="contact-icon">✉️</span> ritikasingh9125@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ritikasingh9125/" target="_blank" rel="noopener" class="contact-line">
+          <span class="contact-icon">in</span> LinkedIn
+        </a>
+        <a href="https://github.com/RitikaSingh91" target="_blank" rel="noopener" class="contact-line">
+          <span class="contact-icon">gh</span> GitHub
+        </a>
+        <a href="https://leetcode.com/u/RitikaSingh91/" target="_blank" rel="noopener" class="contact-line">
+          <span class="contact-icon">lc</span> LeetCode
+        </a>
+        <a href="https://www.instagram.com/ritikasingh_er" target="_blank" rel="noopener" class="contact-line">
+          <span class="contact-icon">ig</span> @ritikasingh_9125
+        </a>
+        <a href="https://www.youtube.com/@ritikasinghvlogs-30" target="_blank" rel="noopener" class="contact-line">
+          <span class="contact-icon">yt</span> ritikasingh_9125
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Your name" required />
+          <span class="form-error" data-for="cf-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="you@example.com" required />
+          <span class="form-error" data-for="cf-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          <span class="form-error" data-for="cf-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="brand-name footer-brand">Ritika Singh</p>
+        <p class="footer-tagline">Building, learning, creating, and growing — one step at a time.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/RitikaSingh91" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.25 9.27 7.77 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.62 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.65 5.33-5.18 5.61.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ritikasingh9125/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ritikasingh_er/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.8.31-1.47.72-2.14 1.39C1.32 2.7.91 3.37.6 4.16c-.3.76-.5 1.64-.56 2.91C0 8.34 0 8.75 0 12s.01 3.66.07 4.94c.06 1.27.26 2.15.56 2.91.31.8.72 1.47 1.39 2.14.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.94.07s3.66-.01 4.94-.07c1.27-.06 2.15-.26 2.91-.56.8-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.14.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.94s-.01-3.66-.07-4.94c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13-.67-.67-1.34-1.08-2.13-1.39-.76-.3-1.64-.5-2.91-.56C15.66.01 15.25 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@ritikasinghvlogs-30" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.5v-7l6.27 3.5-6.27 3.5Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#journey">Journey</a>
+      <a href="#career">Career</a>
+      <a href="#creator">Creator</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-bottom">
+      <p>ritikasingh9125@gmail.com</p>
+      <p>© <span id="year"></span> Ritika Singh. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
