@@ -238,7 +238,7 @@ const PORTFOLIO_DATA = {
   certificates: [
     {
   title: "The Complete Full-Stack Web Development Bootcamp",
-  image: "assets/certificates/Udemy.jpeg",
+  image: "assets/Certificates/Udemy.jpeg",
   organization: "Udemy",
   date: "2026",
   type: "Online Course",
@@ -247,7 +247,7 @@ const PORTFOLIO_DATA = {
 },
     {
       title: "National Level Ideathon 2K26",
-      image: "assets/certificates/AICTE.jpeg",
+      image: "assets/Certificates/AICTE.jpeg",
       organization: "Prestige Institute of Management and Research, Bhopal",
       date: "21 May 2026",
       type: "Ideathon",
@@ -265,7 +265,7 @@ const PORTFOLIO_DATA = {
 },
     {
       title: "AI Tools & ChatGPT Workshop",
-      image: "assets/certificates/be10X.png",
+      image: "assets/Certificates/be10X.png",
       organization: "be10x",
       date: "4 June 2026",
       type: "Workshop",
@@ -274,7 +274,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Deloitte Cyber Job Simulation",
-      image: "assets/certificates/Delloite.png",
+      image: "assets/Certificates/Delloite.png",
       organization: "Deloitte – Forage",
       date: "9 January 2026",
       type: "Job Simulation",
@@ -283,7 +283,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Microsoft Excel – Beginners to Advance",
-      image: "assets/certificates/Excel certificate.jpeg",
+      image: "assets/Certificates/Excel certificate.jpeg",
       organization: "SkillCourse",
       date: "17 July 2026",
       type: "Course",
@@ -292,7 +292,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Cybersecurity Analyst Job Simulation",
-      image: "assets/certificates/Forage.png",
+      image: "assets/Certificates/Forage.png",
       organization: "Tata / Forage",
       date: "4 June 2026",
       type: "Job Simulation",
@@ -301,7 +301,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "TechSprint Hackathon 2025",
-      image: "assets/certificates/GD OEIT.jpeg",
+      image: "assets/Certificates/GD OEIT.jpeg",
       organization: "Google Developer Group On Campus OIST",
       date: "2025",
       type: "Hackathon",
@@ -310,7 +310,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "GEN-AI Camp",
-      image: "assets/certificates/GEN-AI CAMP.jpeg",
+      image: "assets/Certificates/GEN-AI CAMP.jpeg",
       organization: "AlgoUniversity",
       date: "2026",
       type: "Generative AI Program",
@@ -319,7 +319,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Vertex Ideathon 2025",
-      image: "assets/certificates/hachthonjuna.jpg",
+      image: "assets/Certificates/hachthonjuna.jpg",
       organization: "Jaypee University of Engineering & Technology, Guna",
       date: "14–16 November 2025",
       type: "Ideathon",
@@ -328,7 +328,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Kitech Workshop",
-      image: "assets/certificates/Kitech certificate.jpeg",
+      image: "assets/Certificates/Kitech certificate.jpeg",
       organization: "Kitech",
       date: "2026",
       type: "Workshop",
@@ -336,7 +336,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Introduction to Internet of Things",
-      image: "assets/certificates/NPTEL IOT.jpeg",
+      image: "assets/Certificates/NPTEL IOT.jpeg",
       organization: "NPTEL – IIT Kharagpur",
       date: "Jan–Apr 2026",
       type: "NPTEL Certification",
@@ -345,7 +345,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Ethical Hacking",
-      image: "assets/certificates/NPTELethicalhacking.jpeg",
+      image: "assets/Certificates/NPTELethicalhacking.jpeg",
       organization: "NPTEL – IIT Kharagpur",
       date: "Jul–Oct 2025",
       type: "NPTEL Certification",
@@ -354,7 +354,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "30 Days Power BI Micro Course",
-      image: "assets/certificates/Power BI.jpeg",
+      image: "assets/Certificates/Power BI.jpeg",
       organization: "SkillCourse",
       date: "11 June 2026",
       type: "Course",
@@ -362,7 +362,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Front-End Software Engineering Job Simulation",
-      image: "assets/certificates/skyscanner.jpeg",
+      image: "assets/Certificates/skyscanner.jpeg",
       organization: "Skyscanner – Forage",
       date: "4 June 2026",
       type: "Job Simulation",
@@ -371,7 +371,7 @@ const PORTFOLIO_DATA = {
     },
     {
   title: "Attendance Reward",
-  image: "assets/certificates/Attendence reward.jpeg",
+  image: "assets/Certificates/Attendence reward.jpeg",
   organization: "IES College of Technology, Bhopal",
   year: "2026",
   description:
@@ -388,7 +388,7 @@ const PORTFOLIO_DATA = {
 },
 {
   title: "Technovision 2026 – State-Level Project Expo",
-  image: "assets/certificates/MP Hackthon.jpeg",
+  image: "assets/Certificates/MP Hackthon.jpeg",
   organization: "Madhyanchal Professional University, Bhopal",
   date: "2026",
   type: "Project Expo",
@@ -409,7 +409,7 @@ const PORTFOLIO_DATA = {
 },
 {
   title: "Academic Excellence – 1st Rank",
-  image: "assets/certificates/sem5 prize.jpeg",
+  image: "assets/Certificates/sem5 prize.jpeg",
   organization: "IES University, Bhopal",
   date: "2026",
   type: "Academic Achievement",
@@ -419,7 +419,7 @@ const PORTFOLIO_DATA = {
 
 {
   title: "Volunteer – Inforia 2K26",
-  image: "assets/certificates/Volunteer.jpeg",
+  image: "assets/Certificates/Volunteer.jpeg",
   organization: "IES University, Bhopal",
   date: "2026",
   type: "Volunteer Experience",
@@ -429,7 +429,7 @@ const PORTFOLIO_DATA = {
 
 {
   title: "Microsoft Build Event",
-  image: "assets/certificates/Build Micro.jpeg",
+  image: "assets/Certificates/Build Micro.jpeg",
   organization: "SCALive × Knowwy Technologies",
   date: "2026",
   type: "Technical Event",
@@ -439,7 +439,7 @@ const PORTFOLIO_DATA = {
 
 {
   title: "Chess – Inforia 2K24",
-  image: "assets/certificates/Chess.jpeg",
+  image: "assets/Certificates/Chess.jpeg",
   organization: "IES Group of Institutions, Bhopal",
   date: "2024",
   type: "Seminar / Competition",
@@ -449,7 +449,7 @@ const PORTFOLIO_DATA = {
 
 {
   title: "IES Yuva Sansad 2K25",
-  image: "assets/certificates/Yuva sansand.jpeg",
+  image: "assets/Certificates/Yuva sansand.jpeg",
   organization: "IES University, Bhopal",
   date: "2025",
   type: "Leadership & Public Speaking",
@@ -459,7 +459,7 @@ const PORTFOLIO_DATA = {
 
 {
   title: "Microsoft Build Event – Certificate of Appreciation",
-  image: "assets/certificates/buildmicro.jpeg",
+  image: "assets/Certificates/buildmicro.jpeg",
   organization: "SCALive × Knowwy Technologies",
   date: "2026",
   type: "Technical Event",
@@ -468,7 +468,7 @@ const PORTFOLIO_DATA = {
 },
 {
   title: "Mock Parliament – 50 Years of Emergency",
-  image: "assets/certificates/Mock.jpg",
+  image: "assets/Certificates/Mock.jpg",
   organization: "BJYM",
   date: "27 June 2025",
   type: "Mock Parliament",
