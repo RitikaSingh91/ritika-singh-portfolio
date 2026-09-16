@@ -127,6 +127,39 @@ const PORTFOLIO_DATA = {
       demo: "https://ai-cyber-trust-shieldd.vercel.app/",
       image: "assets/GITHUB .png",
     },
+    {
+  name: "Brew & Bean Café",
+  featured: false,
+  category: ["web", "other"],
+
+  description:
+    "A modern, responsive café website concept designed for a small business, featuring an attractive landing page, menu, gallery, customer reviews, special offers, contact information, and WhatsApp ordering.",
+
+  problem:
+    "Small cafés often rely only on social media and may not have a dedicated website where customers can easily explore their menu, location, contact details, and services.",
+
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Responsive Web Design",
+    "Vercel",
+  ],
+
+  features: [
+    "Responsive design optimized for desktop, tablet, and mobile devices",
+    "Interactive menu filtering for different food and beverage categories",
+    "WhatsApp ordering button for quick customer communication",
+    "Café gallery with interactive hover effects",
+    "Customer reviews and special offer sections",
+    "Contact form with business information, location, and opening hours",
+    "Smooth scrolling, animations, and interactive navigation",
+  ],
+
+  github: "https://github.com/RitikaSingh91/-brew-bean-cafe",
+  demo: "https://brew-bean-cafe-flax.vercel.app/",
+  image: "assets/projects/cafe.png",
+},
 
     {
       name: "Password Security Analyzer",
