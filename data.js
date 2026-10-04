@@ -32,7 +32,7 @@ const PORTFOLIO_DATA = {
   // say "150+" while the DSA stats card below says "176" — pick the
   // number that's actually current and this will stay in sync everywhere.
   heroStats: {
-    dsaProblems: "176+",
+    dsaProblems: "250+",
     hackathons: "5+",
   },
 
@@ -160,6 +160,40 @@ const PORTFOLIO_DATA = {
   demo: "https://brew-bean-cafe-flax.vercel.app/",
   image: "assets/projects/cafe.png",
 },
+{
+  name: "Store Rating System",
+  featured: true,
+  category: ["web", "fullstack", "react"],
+
+  description:
+    "A full-stack store rating platform that allows users to discover stores, submit 1–5 star ratings, and manage store information through role-based dashboards.",
+
+  problem:
+    "Managing store ratings and user access can become difficult without a centralized platform that separates responsibilities for administrators, store owners, and normal users.",
+
+  tech: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Prisma",
+    "JWT",
+    "REST API",
+  ],
+
+  features: [
+    "Role-Based Access Control for System Administrators, Store Owners, and Normal Users",
+    "Admin dashboard for managing users, stores, and ratings",
+    "Users can browse stores and submit or update 1–5 star ratings",
+    "Store owners can view ratings and average ratings for their stores",
+    "JWT-based authentication with protected routes",
+    "Input validation, password hashing, and API error handling",
+  ],
+
+  github: "https://github.com/RitikaSingh91/store-rating-system",
+  demo: "https://frontend-delta-lilac-56.vercel.app/",
+  image: "assets/store-rating-system.png",
+},
 
     {
       name: "Password Security Analyzer",
@@ -193,7 +227,7 @@ const PORTFOLIO_DATA = {
       degree: "B.Tech, Computer Science & Engineering (Cyber Security)",
       school: "IES College of Technology, Bhopal (RGPV University)",
       year: "2023 — 2027",
-      grade: "CGPA: 8.56 / 10.0",
+      grade: "CGPA: 8.63 / 10.0",
       note: "Relevant coursework: DSA, DBMS, OS, Computer Networks, OOP",
     },
     {
@@ -201,7 +235,7 @@ const PORTFOLIO_DATA = {
       school: "Manas Convent School",
       year: "2023",
       grade: "83%",
-      note: "Basic python"
+      note: "Built my foundation in Mathematics, Science and Computer Fundamentals(Basic python)"
     },
   ],
 
@@ -225,8 +259,8 @@ const PORTFOLIO_DATA = {
 
   // Only real numbers should replace the placeholders below.
   dsaStats: [
-    { label: "Problems Solved", value: "176", note: "LeetCode problems solved" },
-    { label: "Active Days", value: "230", note: "Consistent problem-solving practice" },
+    { label: "Problems Solved", value: "260", note: "LeetCode problems solved" },
+    { label: "Active Days", value: "250", note: "Consistent problem-solving practice" },
     { label: "Max Streak", value: "89 days", note: "Longest continuous streak" },
     {
       label: "Current Focus",
