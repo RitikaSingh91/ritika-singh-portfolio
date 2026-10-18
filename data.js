@@ -274,6 +274,15 @@ const PORTFOLIO_DATA = {
   // entries here the same way as new results come in.
   careerHighlights: [
     {
+  type: "Offer",
+  title: "Software Development Intern — Internship",
+  organization: "Ank Square Private Limited",
+  year: "Oct 2026",
+  description:
+    "Received an internship offer letter for a 3-month internship as a Software Development Intern, commencing on 15 October 2026, to gain practical industry experience in software development.",
+  image: "assets/career/anksquare.png",
+},
+    {
       type: "Offer",
       title: "Business Growth Specialist — Internship",
       organization: "SmartED Innovations (Learnspace Edtech Pvt Ltd)",
