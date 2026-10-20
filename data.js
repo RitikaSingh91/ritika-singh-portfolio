@@ -216,11 +216,12 @@ const PORTFOLIO_DATA = {
       ],
 
       // TODO: add the real GitHub repo link for this project.
-      github: "#",
-      demo: "",
-      image: null,
+      github: "https://github.com/RitikaSingh91/passwordguard-fullstack",
+      demo: "passwordguard-fullstack.vercel.app",
+      image:"asserts/projects/passwords.png" ,
     },
   ],
+  
 
   education: [
     {
